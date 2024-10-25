@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos Eurotrip</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="imagenes/logoet.jpg" alt="cotito">
+    <a class="navbar-brand" href="#"></a>
+   
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="madridDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Madrid</a>
+                <div class="dropdown-menu" aria-labelledby="madridDropdown">
+                    <a class="dropdown-item" href="#">Alojamiento</a>
+                    <a class="dropdown-item" href="https://www.omio.com.ar/app/search-frontend/results/L087BCAB04BA04407B1B44E8FCF6B6D73/bus?locale=es&_gl=1*1qrj58g*_up*MQ..&gclid=EAIaIQobChMIys-g49OkiQMV8iCtBh27OjPXEAAYAiAAEgJ7UPD_BwE">Tren</a>
+                    <a class="dropdown-item" href=" https://www.omio.com.ar//?id=ZnJvbnRfcGFnZS5jb206YXI=&utm_source=google&utm_medium=cpc&utm_campaign=SEM_AR_ES_Bus_All_All_%5BBus_02_Gen%7CPro_0%5D_P%3ABUS&utm_term=espa%C3%B1a+bus+viaje&adgroup=SEM_AR_ES_Bus_All_All_%5BBus_02_Gen%7CPro_0%5D_P%3ABUS_%7BCountries_11%7D_%7BTrip_1%7D&content=basic&h=bHBzLmguc2VtLi5nZW4uYnVzXzAyLi4=&gad_source=1&gclid=EAIaIQobChMIuc3_qdSkiQMVFkJIAB34SQc4EAAYAiAAEgI7jfD_BwE">Bus</a>
+                    <a class="dropdown-item" href=" https://www.google.com/maps/place/Madrid,+Espa%C3%B1a/@40.4379543,-3.6795367,11z/data=!3m1!4b1!4m6!3m5!1s0xd422997800a3c81:0xc436dec1618c2269!8m2!3d40.4167279!4d-3.7032905!16zL20vMDU2X3k?entry=ttu&g_ep=EgoyMDI0MTAyMC4xIKXMDSoASAFQAw%3D%3D">Mapa</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item dropdown-toggle" href="#" id="vueloMadridDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vuelos</a>
+                    <div class="dropdown-menu" aria-labelledby="vueloMadridDropdown">
+                        <a class="dropdown-item" href="https://www.latamairlines.com/es/es/mis-viajes/second-detail?orderId=LA0454173HHUT&lastname=VECCHIO&utm_source=eim&utm_medium=email&utm_campaign=es_latam_trip_cycle_order_purchase_20240818 ">Llegada</a>
+                     <a class="dropdown-item" href="">
+    <img src="./imagenes/madrid-paris.jpg" alt="Partida" style="width: 100%; height: auto;">
+</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="parisDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Paris</a>
+                <div class="dropdown-menu" aria-labelledby="parisDropdown">
+                    <a class="dropdown-item" href="#">Alojamiento</a>
+                    <a class="dropdown-item" href=" https://www.omio.com/app/search-frontend/results/LBBEA48D791A040EFA31E1E32891C3094/train?locale=en&_gl=1%2A1nga14g%2A_up%2AMQ..&gclid=EAIaIQobChMImuL4itKkiQMVHhitBh33XSkmEAAYAyAAEgJ5MvD_BwE&def_sort=s&easy=1">Tren</a>
+                    <a class="dropdown-item" href=" https://www.omio.com.ar/app/search-frontend/results/LC3CB6D5EB58F4813988BD4BED8D64F8F/bus?locale=es&_gl=1*6lp1bk*_up*MQ..&gclid=EAIaIQobChMIuc3_qdSkiQMVFkJIAB34SQc4EAAYAiAAEgI7jfD_BwE">Bus</a>
+                    <a class="dropdown-item" href=" https://www.google.com/maps/place/Par%C3%ADs,+Francia/@48.8589633,2.182226,11z/data=!3m1!4b1!4m6!3m5!1s0x47e66e1f06e2b70f:0x40b82c3688c9460!8m2!3d48.8575475!4d2.3513765!16zL20vMDVxdGo?entry=ttu&g_ep=EgoyMDI0MTAyMC4xIKXMDSoASAFQAw%3D%3D">Mapa</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item dropdown-toggle" href="#" id="vueloParisDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vuelos</a>
+                    <div class="dropdown-menu" aria-labelledby="vueloParisDropdown">
+                        <a class="dropdown-item" href="">
+    <img src="./imagenes/madrid-paris.jpg" alt="Llegada" style="width: 100%; height: auto;">
+</a>
+<a class="dropdown-item" href="">
+    <img src="./imagenes/paris-dublin.jpg" alt="Partida" style="width: 100%; height: auto;">
+</a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dublinDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dublin</a>
+                <div class="dropdown-menu" aria-labelledby="dublinDropdown">
+                    <a class="dropdown-item" href="#">Alojamiento</a>
+                    <a class="dropdown-item" href=" https://www.irishrail.ie/en-ie/Offer/webfares?gad_source=1&gclid=EAIaIQobChMImsXa3dKkiQMV9AWtBh2D_TMzEAAYAiAAEgIuIPD_BwE&gclsrc=aw.ds">Tren</a>
+                    <a class="dropdown-item" href=" https://www.omio.com.ar/app/search-frontend/results/L408B266A7EC14DFEAEB7298799AE3245/train?locale=es&_gl=1%2A1wtkxqm%2A_up%2AMQ..&gclid=EAIaIQobChMI_K-R39SkiQMV59LCBB3LMC65EAAYASAAEgKdu_D_BwE">Bus</a>
+                    <a class="dropdown-item" href=" https://www.google.com/maps/place/Dubl%C3%ADn,+Irlanda/@53.3244116,-6.4105119,11z/data=!3m1!4b1!4m6!3m5!1s0x48670e80ea27ac2f:0xa00c7a9973171a0!8m2!3d53.3498053!4d-6.2603097!16zL20vMDJjZnQ?entry=ttu&g_ep=EgoyMDI0MTAyMC4xIKXMDSoASAFQAw%3D%3D">Mapa</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item dropdown-toggle" href="#" id="vueloDublinDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vuelos</a>
+                    <div class="dropdown-menu" aria-labelledby="vueloDublinDropdown">
+                       <a class="dropdown-item" href="">
+    <img src="./imagenes/paris-dublin.jpg" alt="Llegada" style="width: 100%; height: auto;">
+</a>
+<a class="dropdown-item" href="">
+    <img src="./imagenes/dublin-pisa.jpg" alt="Partida" style="width: 100%; height: auto;">
+</a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="pisaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pisa</a>
+                <div class="dropdown-menu" aria-labelledby="pisaDropdown">
+                    <a class="dropdown-item" href="#">Alojamiento</a>
+                    <a class="dropdown-item" href=" https://www.omio.com.ar/trenes/pisa/florencia?id=Y29ubmVjdGlvbl9wYWdlLmNvbTphci50cmFpbi4zODg0MjAuMzg4MDU4&h=bHBzLmguc2VtLmkucm91LnRyYWluXzAxLi4=&utm_campaign=SEM_AR_ES_TRAIN_ALL_ALL_I.III_%5BTRAIN_01_ROU%7CPRO_0%5D_E%3ATREN_NOPRO&adgroup=SEM_AR_ES_TRAIN_ALL_ALL_I.III_%5BTRAIN_01_ROU%7CPRO_0%5D_E%3ATREN_NOPRO_%28PISA_388420_IT%29_%28FLORENCE_388058_IT%29&utm_term=tren+pisa+florencia&utm_source=google&utm_medium=cpc&content=basic&gad_source=1&gclid=EAIaIQobChMIltWhkdOkiQMVD0p_AB044x8pEAAYAyAAEgKyF_D_BwE">Tren</a>
+                    <a class="dropdown-item" href=" https://www.omio.com.ar/app/search-frontend/results/L68A00E391E5E49D4B3C05AAE7F7033E7/bus?locale=es&_gl=1*1wtkxqm*_up*MQ..&gclid=EAIaIQobChMI_K-R39SkiQMV59LCBB3LMC65EAAYASAAEgKdu_D_BwE">Bus</a>
+                    <a class="dropdown-item" href=" https://www.google.com/maps/place/Pisa,+Italia/@43.7068053,10.3541784,13z/data=!3m1!4b1!4m6!3m5!1s0x12d5919af0f6598f:0xaab80fb5a78478c8!8m2!3d43.7228385!4d10.4017581!16zL20vMDY0eHA?entry=ttu&g_ep=EgoyMDI0MTAyMC4xIKXMDSoASAFQAw%3D%3D">Mapa</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item dropdown-toggle" href="#" id="vueloPisaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vuelos</a>
+                    <div class="dropdown-menu" aria-labelledby="vueloPisaDropdown">
+                         <a class="dropdown-item" href="">
+    <img src="./imagenes/dublin-pisa.jpg" alt="Llegada" style="width: 100%; height: auto;">
+</a>
+<a class="dropdown-item" href="">
+    <img src="./imagen/roma-barcelona.jpg" alt="Partida" style="width: 100%; height: auto;">
+</a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="florenciaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Florencia</a>
+                <div class="dropdown-menu" aria-labelledby="florenciaDropdown">
+                    <a class="dropdown-item" href="#">Alojamiento</a>
+                    <a class="dropdown-item" href=" https://www.omio.com.ar/trenes/florencia/roma?id=Y29ubmVjdGlvbl9wYWdlLmNvbTphci50cmFpbi4zODgwNTguMzg4NDk4&h=bHBzLmguc2VtLmkucm91LnRyYWluXzAxLi4=&utm_campaign=SEM_AR_ES_TRAIN_ALL_ALL_I.III_%5BTRAIN_01_ROU%7CPRO_0%5D_E%3ATREN_NOPRO&adgroup=SEM_AR_ES_TRAIN_ALL_ALL_I.III_%5BTRAIN_01_ROU%7CPRO_0%5D_E%3ATREN_NOPRO_%28FLORENCE_388058_IT%29_%28ROME_388498_IT%29&utm_term=tren+florencia+a+roma&utm_source=google&utm_medium=cpc&content=basic&gad_source=1&gclid=EAIaIQobChMIy4i9pNOkiQMVtEp_AB0iOiMhEAAYAiAAEgLV6vD_BwE">Tren</a>
+                    <a class="dropdown-item" href=" https://www.omio.com.ar/app/search-frontend/results/LFA2577A9877245A2A6411823BBF86ACE/bus?locale=es&_gl=1*1wtkxqm*_up*MQ..&gclid=EAIaIQobChMI_K-R39SkiQMV59LCBB3LMC65EAAYASAAEgKdu_D_BwE">Bus</a>
+                    <a class="dropdown-item" href=" https://www.google.com/maps/place/Florencia,+Italia/@43.7800525,11.1585666,12z/data=!3m1!4b1!4m6!3m5!1s0x132a56a680d2d6ad:0x93d57917efc72a03!8m2!3d43.7699685!4d11.2576706!16zL20vMDMxeTI?entry=ttu&g_ep=EgoyMDI0MTAyMC4xIKXMDSoASAFQAw%3D%3D">Mapa</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item dropdown-toggle" href="#" id="vueloFlorenciaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vuelos</a>
+                    <div class="dropdown-menu" aria-labelledby="vueloFlorenciaDropdown">
+                         <a class="dropdown-item" href="">
+    <img src="./imagen/roma-barcelona.jpg" alt="Llegada" style="width: 100%; height: auto;">
+</a>
+<a class="dropdown-item" href="">
+    <img src="./imagen/roma-barcelona.jpg" alt="Partida" style="width: 100%; height: auto;">
+</a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="romaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Roma</a>
+                <div class="dropdown-menu" aria-labelledby="romaDropdown">
+                    <a class="dropdown-item" href="#">Alojamiento</a>
+                    <a class="dropdown-item" href=" https://www.omio.com/trains/fiumicino/rome?id=Y29ubmVjdGlvbl9wYWdlLmNvbS50cmFpbi4zODgwNTYuMzg4NDk4&h=bHBzLmguc2VtLmkucm91LnRyYWluXzAxLi4=&content=basic&currency=USD&gad_source=1&gclid=EAIaIQobChMIq6OQutOkiQMV3xKtBh29sxqtEAAYASAAEgK3vvD_BwE">Tren</a>
+                    <a class="dropdown-item" href=" https://www.omio.com.ar/app/search-frontend/results/LFBBAC072230D4161802DF2C2F7BEA401/bus?locale=es&_gl=1*1wtkxqm*_up*MQ..&gclid=EAIaIQobChMI_K-R39SkiQMV59LCBB3LMC65EAAYASAAEgKdu_D_BwE">Bus</a>
+                    <a class="dropdown-item" href=" https://www.google.com/maps/place/Roma,+Italia/@41.9102088,12.3711871,11z/data=!3m1!4b1!4m6!3m5!1s0x132f6196f9928ebb:0xb90f770693656e38!8m2!3d41.8967068!4d12.4822025!16zL20vMDZjNjI?entry=ttu&g_ep=EgoyMDI0MTAyMC4xIKXMDSoASAFQAw%3D%3D">Mapa</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item dropdown-toggle" href="#" id="vueloRomaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vuelos</a>
+                    <div class="dropdown-menu" aria-labelledby="vueloRomaDropdown">
+                         <a class="dropdown-item" href="">
+    <img src="./imagenes/dublin-pisa.jpg" alt="Llegada" style="width: 100%; height: auto;">
+</a>
+<a class="dropdown-item" href="">
+    <img src="./imagenes/roma-barcelona.jpg" alt="Partida" style="width: 100%; height: auto;">
+</a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="barcelonaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Barcelona</a>
+                <div class="dropdown-menu" aria-labelledby="barcelonaDropdown">
+                    <a class="dropdown-item" href="#">Alojamiento</a>
+                    <a class="dropdown-item" href=" https://www.omio.com.ar/trenes/madrid/barcelona?id=Y29ubmVjdGlvbl9wYWdlLmNvbTphci50cmFpbi4zNzg2NTUuMzc4NDY4&h=bHBzLmguc2VtLmkucm91LnRyYWluXzAyLi4=&utm_campaign=SEM_AR_ES_TRAIN_ALL_ALL_I.III_%5BTRAIN_02_ROU%7CPRO_0%5D_P%3AFERROCARRIL_NOPRO&adgroup=SEM_AR_ES_TRAIN_ALL_ALL_I.III_%5BTRAIN_02_ROU%7CPRO_0%5D_P%3AFERROCARRIL_NOPRO_%28MADRID_378655_ES%29_%28BARCELONA_378468_ES%29&utm_term=ferrocarril+a+barcelona+de+madrid&utm_source=google&utm_medium=cpc&content=basic&gad_source=1&gclid=EAIaIQobChMI_Lmuy9OkiQMVKxWtBh1zzgk0EAAYASAAEgJk-_D_BwE">Tren</a>
+                    <a class="dropdown-item" href=" https://www.omio.com.ar/app/search-frontend/results/LC60313E45B43485C892530F31CC54996/bus?locale=es&_gl=1*1wtkxqm*_up*MQ..&gclid=EAIaIQobChMI_K-R39SkiQMV59LCBB3LMC65EAAYASAAEgKdu_D_BwE">Bus</a>
+                    <a class="dropdown-item" href=" https://www.google.com/maps/place/Barcelona,+Espa%C3%B1a/@41.3926679,2.1401891,12z/data=!3m1!4b1!4m6!3m5!1s0x12a49816718e30e5:0x44b0fb3d4f47660a!8m2!3d41.3873974!4d2.168568!16zL20vMDFmNjI?entry=ttu&g_ep=EgoyMDI0MTAyMC4xIKXMDSoASAFQAw%3D%3D ">Mapa</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item dropdown-toggle" href="#" id="vueloBarcelonaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vuelos</a>
+                    <div class="dropdown-menu" aria-labelledby="vueloBarcelonaDropdown">
+<a class="dropdown-item" href="">
+    <img src="./imagen/roma-barcelona.jpg" alt="Llegada" style="width: 100%; height: auto;">
+</a>
+
+                        <a class="dropdown-item" href=" https://www.latamairlines.com/es/es/mis-viajes/second-detail?orderId=LA0454173HHUT&lastname=VECCHIO&utm_source=eim&utm_medium=email&utm_campaign=es_latam_trip_cycle_order_purchase_20240818">Partida</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+ 
+    </div>
+</nav>
+<a href="pdf/seguro_de_viaje_pau.pdf.pdf" class="pdf-button" target="_blank">Seguro de viaje ✈ PAU</a>
+
+    <a href="pdf/seguro_de_viaje_rodri.pdf.pdf" class="pdf-button" target="_blank">Seguro de viaje ✈ RODRI</a>
+<div class="container gastos-container">
+    <h1 class="text-center">GASTOS</h1>
+    <div class="text-center">
+        <button id="btnPau" class="btn btn-pau">Pau</button>
+        <span id="diferenciaPau" class="diferencia">Diferencia: 0.00€</span>
+        <button id="btnRodri" class="btn btn-rodri">Rodri</button>
+        <span id="diferenciaRodri" class="diferencia">Diferencia: 0.00€</span>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <input type="text" id="descripcion" class="form-control" placeholder="Descripcion" />
+        </div>
+        <div class="col-md-6">
+            <input type="number" id="monto" class="form-control" placeholder="Monto (€)" step="0.01" />
+        </div>
+    </div>
+
+    <div class="resultado">
+        <h2>Pau</h2>
+        <div id="resultadosPau" class="mb-4"></div>
+        
+        <h2>Rodri</h2>
+        <div id="resultadosRodri" class="mb-4"></div>
+    </div>
+</div>
+   <button id="enojadoBtn" class="btn btn-danger">
+    RISOLVERE TUTTO
+</button>
+<div id="imageContainer" style="display: none;">
+    <img id="enojadoImage" src="./imagenes/cotito.jpg" alt="Imagen de enojo" style="max-width: 100%; height: auto;">
+</div>
+<script>
+    const { DateTime } = luxon;
+
+    let totalPau = 0;
+    let totalRodri = 0;
+    let autor = '';
+
+    document.getElementById('btnPau').addEventListener('click', () => {
+        autor = 'Pau';
+        agregarGasto();
+    });
+
+    document.getElementById('btnRodri').addEventListener('click', () => {
+        autor = 'Rodri';
+        agregarGasto();
+    });
+
+    function agregarGasto() {
+        const descripcion = document.getElementById('descripcion').value;
+        const monto = parseFloat(document.getElementById('monto').value);
+
+        if (!descripcion || isNaN(monto) || monto <= 0) {
+            Swal.fire('Error', 'Por favor ingresa una descripción válida y un monto mayor a 0.', 'error');
+            return;
+        }
+
+        const fecha = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
+        const gastoHtml = 
+            `<p>
+                <strong>${fecha}</strong> - ${autor}: ${descripcion}: ${monto.toFixed(2)}€
+                <span class="btn-delete" onclick="eliminarGasto('${autor}', ${monto}, this)">X</span>
+            </p>`;
+        
+        if (autor === 'Pau') {
+            document.getElementById('resultadosPau').insertAdjacentHTML('beforeend', gastoHtml);
+            totalPau += monto;
+        } else {
+            document.getElementById('resultadosRodri').insertAdjacentHTML('beforeend', gastoHtml);
+            totalRodri += monto;
+        }
+
+        actualizarBotones();
+        document.getElementById('descripcion').value = '';
+        document.getElementById('monto').value = '';
+    }
+
+    function eliminarGasto(nombre, monto, element) {
+        if (nombre === 'Pau') {
+            totalPau -= monto;
+            element.parentElement.remove();
+        } else {
+            totalRodri -= monto;
+            element.parentElement.remove();
+        }
+        actualizarBotones();
+    }
+
+    function actualizarBotones() {
+        document.getElementById('btnPau').classList.toggle('btn-success', totalPau > totalRodri);
+        document.getElementById('btnPau').classList.toggle('btn-danger', totalPau < totalRodri);
+        document.getElementById('btnRodri').classList.toggle('btn-success', totalRodri > totalPau);
+        document.getElementById('btnRodri').classList.toggle('btn-danger', totalRodri < totalPau);
+
+        // Actualizar diferencias
+        const diferencia = (totalPau - totalRodri).toFixed(2);
+        document.getElementById('diferenciaPau').innerText = `Diferencia: ${diferencia}€`;
+        document.getElementById('diferenciaRodri').innerText = `Diferencia: ${(-diferencia).toFixed(2)}€`;
+    }
+
+document.getElementById("enojadoBtn").addEventListener("click", function() {
+    const imageContainer = document.getElementById("imageContainer");
+    imageContainer.style.display = "block"; // Mostrar la imagen
+
+    setTimeout(() => {
+        imageContainer.style.display = "none"; // Ocultar la imagen despues de 6 segundos
+    }, 4000); // 4000 milisegundos = 4 segundos
+});
+</script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<footer class="bg-dark text-white text-center py-4">
+    <p>&copy; Pau y Rodri</p>
+    <p> 🛫 EUROTRIP 2024 🛬</p>
+    <p> R.L.Todos los derechos reservados.</p>
+    </footer>
+</footer>
+</body>
+</html>

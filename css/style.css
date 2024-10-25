@@ -1,0 +1,168 @@
+
+        body {
+            background-image: url(../imagenes/fondoeurocap.jpg);
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            background-color: #114980;
+    
+        }
+       
+        .gastos-container {
+          
+            margin-top: 10px;
+        }
+        .resultado {
+            margin-top: 15px;
+        }
+        .btn-pau, .btn-rodri {
+            background-color: rgb(64, 135, 242);
+            
+        }
+        .btn-delete {
+            color: rgb(4, 0, 255);
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .diferencia {
+            margin-left: 10px;
+            font-weight: bold;
+        }
+        .pdf-button {
+            background-color: #8b0074; /* Color vino */
+            color: white;
+            padding: 10px 10px;
+            border:#5d0ad1;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 15px;
+            cursor: pointer;
+            text-decoration: none;
+            
+        }
+
+        .pdf-button:hover {
+            background-color: #43e02e; /* Color vino más claro */
+        }
+      
+        /* Estilos generales del navbar */
+.navbar {
+    background-color: #114980; /* Color de fondo suave */
+    border-bottom: 2px solid #a4a0a0; /* Línea sutil en la parte inferior */
+}
+
+.navbar-brand {
+    font-family: 'Georgia', serif; /* Tipografía elegante */
+    font-size: 1.5rem;
+    color: #5d0ad1; /* Color principal del texto */
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #11ec09; /* Cambio de color al pasar el cursor */
+}
+
+.navbar-toggler {
+    border: none; /* Sin borde en el botón de toggle */
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 30 30\'%3E%3Cpath stroke=\'rgba%28120,120,120,1%29\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-miterlimit=\'10\' d=\'M4 7h22M4 15h22M4 23h22\'/%3E%3C/svg%3E');
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    color: #1a203f;
+    font-family: 'Arial', sans-serif;
+    margin-left: 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #15de12; /* Color de hover */
+    background-color: #26c029; /* Suave cambio de fondo */
+    border-radius: 50px; /* Bordes redondeados */
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #57ae55; /* Fondo blanco para el menú desplegable */
+    border-radius: 5px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dddddd;
+}
+
+.navbar-nav .dropdown-item {
+    font-size: 1rem;
+    color: #03172b;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #f8f9fa; /* Suave fondo gris al hover */
+    color: #30c31a;
+}
+
+.dropdown-divider {
+    border-color: #ddd; /* Color más claro para el divisor */
+}
+
+.dropdown-menu .dropdown-item img {
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+    transition: transform 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item img:hover {
+    transform: scale(1.05); /* Efecto zoom suave */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
+h1 { font-size: xx-large;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column; /* Organiza el logo y el menú en columnas */
+        align-items: center; /* Centra horizontalmente los elementos */
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+        margin-bottom: 10px; /* Espacio entre el logo y el menú */
+    }
+
+    .navbar-nav {
+        text-align: center;
+        flex-direction: column; /* Alinea las opciones de navegación en columna */
+    }
+
+    .navbar-nav .nav-link {
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+}
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column; /* Los botones se apilan verticalmente en pantallas pequeñas */
+    }
+
+    .pdf-button {
+        width: 80%; /* Los botones ocupan más espacio en móviles */
+        text-align: center;
+    }
+}   
