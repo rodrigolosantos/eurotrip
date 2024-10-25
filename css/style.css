@@ -1,6 +1,6 @@
 
         body {
-            background-image: url(../imagenes/fondoeurocap.jpg);
+            background-image: url(../imagenes/fondoviejo.jpg);
             background-size: cover;
             font-family: 'Arial', sans-serif;
             background-color: #114980;
@@ -9,10 +9,11 @@
        
         .gastos-container {
           
-            margin-top: 10px;
+            margin-top: 40px;
+           
         }
         .resultado {
-            margin-top: 15px;
+            margin-top: 13px;
         }
         .btn-pau, .btn-rodri {
             background-color: rgb(64, 135, 242);
@@ -24,11 +25,11 @@
             font-weight: bold;
         }
         .diferencia {
-            margin-left: 10px;
+            margin-left: 0px;
             font-weight: bold;
         }
         .pdf-button {
-            background-color: #8b0074; /* Color vino */
+            background-color: #8b000e; /* Color vino */
             color: white;
             padding: 10px 10px;
             border:#5d0ad1;
@@ -41,7 +42,7 @@
         }
 
         .pdf-button:hover {
-            background-color: #43e02e; /* Color vino más claro */
+            background-color: #e0ce2e; /* Color vino más claro */
         }
       
         /* Estilos generales del navbar */
@@ -58,7 +59,7 @@
 }
 
 .navbar-brand:hover {
-    color: #11ec09; /* Cambio de color al pasar el cursor */
+    color: #ceec09; /* Cambio de color al pasar el cursor */
 }
 
 .navbar-toggler {
@@ -78,13 +79,13 @@
 }
 
 .navbar-nav .nav-link:hover {
-    color: #15de12; /* Color de hover */
-    background-color: #26c029; /* Suave cambio de fondo */
+    color: #cade12; /* Color de hover */
+    background-color: #c09426; /* Suave cambio de fondo */
     border-radius: 50px; /* Bordes redondeados */
 }
 
 .navbar-nav .dropdown-menu {
-    background-color: #57ae55; /* Fondo blanco para el menú desplegable */
+    background-color: #aeac55; /* Fondo blanco para el menú desplegable */
     border-radius: 5px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     border: 1px solid #dddddd;
