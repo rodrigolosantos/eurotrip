@@ -1,12 +1,12 @@
 
         body {
-            background-image: url(../imagenes/fondocolor.jpg);
+            background-image: url(../imagenes/fondocolor2.jpg);
             background-size: cover;
             font-family: 'Arial', sans-serif;
         
     
         }
-        img {border-radius: 10%;}
+        img {border-radius: 03%;}
     
         .gastos-container {
           
@@ -43,7 +43,7 @@
         }
 
         .pdf-button2:hover {
-            background-color: #e0ce2e; /* Color vino más claro */
+            background-color: #cbe02e; /* Color vino más claro */
         }
       
         .pdf-button2 {
@@ -68,7 +68,7 @@
         background-color: #6b3137; /* Color vino */
         color: white;
         padding: 10px 10px;
-        border:#d18f0a;
+        border:#780ad1;
         border-radius: 5px;
         text-align: center;
         font-size: 15px;
@@ -94,7 +94,7 @@
 }
 
 .navbar-brand:hover {
-    color: #ceec09; /* Cambio de color al pasar el cursor */
+    color: #2b09ec; /* Cambio de color al pasar el cursor */
 }
 
 .navbar-toggler {
@@ -107,20 +107,20 @@
 
 .navbar-nav .nav-link {
     font-size: 1.1rem;
-    color: #395677;
+    color: #0fa9d3;
     font-family: 'Arial', sans-serif;
     margin-left: 15px;
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #cade12; /* Color de hover */
-    background-color: #c09426; /* Suave cambio de fondo */
+    color: #12de12; /* Color de hover */
+    background-color: #4fc026; /* Suave cambio de fondo */
     border-radius: 50px; /* Bordes redondeados */
 }
 
 .navbar-nav .dropdown-menu {
-    background-color: #aeac55; /* Fondo blanco para el menú desplegable */
+    background-color: #55ae9f; /* Fondo blanco para el menú desplegable */
     border-radius: 5px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     border: 1px solid #dddddd;
@@ -194,6 +194,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 /* Estilos responsivos */
 @media (max-width: 768px) {
     .button-container {
+       
         flex-direction: column; /* Los botones se apilan verticalmente en pantallas pequeñas */
     }
 
@@ -205,7 +206,3 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 h2 { color: rgb(46, 10, 10);
 font-size: large;}
 
-.animate__animated.animate__rubberBand {
-   
-    --animate__delay - 2s2s
-   }
