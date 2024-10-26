@@ -6,6 +6,7 @@
         
     
         }
+        img {border-radius: 10%;}
     
         .gastos-container {
           
@@ -106,7 +107,7 @@
 
 .navbar-nav .nav-link {
     font-size: 1.1rem;
-    color: #1a203f;
+    color: #395677;
     font-family: 'Arial', sans-serif;
     margin-left: 15px;
     transition: color 0.3s ease, background-color 0.3s ease;
@@ -127,7 +128,7 @@
 
 .navbar-nav .dropdown-item {
     font-size: 1rem;
-    color: #03172b;
+    color: #1721a2;
     padding: 10px 20px;
     transition: background-color 0.3s ease;
 }
@@ -203,3 +204,8 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 }   
 h2 { color: rgb(46, 10, 10);
 font-size: large;}
+
+.animate__animated.animate__rubberBand {
+   
+    --animate__delay - 2s2s
+   }
