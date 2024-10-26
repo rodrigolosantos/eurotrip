@@ -41,10 +41,44 @@
             
         }
 
-        .pdf-button:hover {
+        .pdf-button2:hover {
             background-color: #e0ce2e; /* Color vino más claro */
         }
       
+        .pdf-button2 {
+            background-color: #bebb0b; /* Color vino */
+            color: white;
+            padding: 10px 10px;
+            border:#d15d0a;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 15px;
+            cursor: pointer;
+            text-decoration: none;
+            
+        }
+    
+
+    .pdf-button2:hover {
+        background-color: #86ec12; /* Color vino más claro */
+    }
+  
+    .pdf-button3 {
+        background-color: #6b3137; /* Color vino */
+        color: white;
+        padding: 10px 10px;
+        border:#d18f0a;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 15px;
+        cursor: pointer;
+        text-decoration: none;
+        
+    }
+
+        .pdf-button3:hover {
+            background-color: #e0692e; /* Color vino más claro */
+        }
         /* Estilos generales del navbar */
 .navbar {
     background-color: #114980; /* Color de fondo suave */
@@ -167,3 +201,5 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
         text-align: center;
     }
 }   
+h2 { color: black;
+font-size: xx-large;}
