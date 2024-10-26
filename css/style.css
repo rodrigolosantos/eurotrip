@@ -166,7 +166,7 @@
         font-size: 1.2rem;
     }
 }
-h1 { font-size: xx-large;
+h1 { font-size: large;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 /* Estilos responsivos */
 @media (max-width: 768px) {
