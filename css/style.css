@@ -17,11 +17,11 @@
             margin-top: 13px;
         }
         .btn-pau, .btn-rodri {
-            background-color: rgb(64, 135, 242);
+            background-color: rgb(88, 64, 242);
             
         }
         .btn-delete {
-            color: rgb(4, 0, 255);
+            color: rgb(0, 38, 255);
             cursor: pointer;
             font-weight: bold;
         }
@@ -33,8 +33,8 @@
             background-color: #8b000e; /* Color vino */
             color: white;
             padding: 10px 10px;
-            border:#5d0ad1;
-            border-radius: 5px;
+            border:#d1ca0a;
+            border-radius: 8px;
             text-align: center;
             font-size: 15px;
             cursor: pointer;
@@ -203,6 +203,6 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
         text-align: center;
     }
 }   
-h2 { color: rgb(46, 10, 10);
+h2 { color: rgb(45, 165, 246);
 font-size: large;}
 
